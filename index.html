@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>ChatBot</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="chat__container">
+        <ul id="chatlist" class="chat"></ul>
+        <div class="arrow__container"><div class="arrow"></div></div>
+      </div>
+      <form id="chatform" class="main__form">
+        <input
+          type="text"
+          id="clientname"
+          class="name__input"
+          placeholder="Your name"
+          required
+        />
+        <!-- <input
+          type="text"
+          id="clientmessage"
+          class="message__input"
+          placeholder="Type a message"
+          required
+        /> -->
+        <textarea
+          rows="1"
+          cols="20"
+          class="message__input"
+          id="clientmessage"
+          placeholder="Type a message"
+          required
+        ></textarea>
+        <button type="submit" class="submit__container">
+          <div class="submit"></div>
+        </button>
+        <span class="show-icon">🙂</span>
+        <div class="icons__container">
+          <div class="icons-avatar__container">
+            <div class="avatar"></div>
+            <div class="avatar-code"></div>
+          </div>
+          <div class="icons__delimiter"></div>
+          <div class="icons"></div>
+        </div>
+      </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
